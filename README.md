@@ -10,6 +10,9 @@ An end-to-end BI project for the Awesome Chocolate Factory, using Power BI to cl
 
 This project showcases a complete business intelligence workflow within Power BI for the Awesome Chocolate Factory. It starts with data cleaning in Power Query, proceeds to building a relational data model (Star Schema), and involves writing complex DAX measures to derive key metrics like Year-on-Year profit. The final result is a fully interactive dashboard designed to give stakeholders a clear view of sales and shipping performance.
 
+<img width="1168" height="655" alt="image" src="https://github.com/user-attachments/assets/96304d1c-93b4-4eed-a39c-9c99b29ac6a6" />
+
+
 ### Problem Statement
 
 The management team at the Awesome Chocolate Factory needed a unified, interactive tool to track sales, shipping, and profitability KPIs. Without a centralized dashboard, it was difficult to analyze performance trends and make timely, data-driven decisions. This project solves that problem by creating a comprehensive Power BI report that provides clear, actionable insights.
