@@ -4,55 +4,59 @@ Awesome Chocolate Factory: Sales & Performance Dashboard
 
 ### Brief One Line Summary
 
-An end-to-end BI project for the Awesome Chocolate Factory, using Power BI to clean, model, and visualize sales data with advanced DAX calculations.
+An end-to-end Azure SQL + Power BI BI project that cleans, models, and visualizes sales data using a Star Schema and advanced DAX calculations.
 
 ### Overview
-
-This project showcases a complete business intelligence workflow within Power BI for the Awesome Chocolate Factory. It starts with data cleaning in Power Query, proceeds to building a relational data model (Star Schema), and involves writing complex DAX measures to derive key metrics like Year-on-Year profit. The final result is a fully interactive dashboard designed to give stakeholders a clear view of sales and shipping performance.
-
+This project demonstrates a complete business intelligence workflow for the Awesome Chocolate Factory using Azure SQL Database and Power BI. Raw sales data is stored and structured in Azure SQL, transformed and modeled in Power BI using a Star Schema, and analyzed through advanced DAX measures such as Year-on-Year (YoY) profit. The final output is a fully interactive dashboard that provides stakeholders with clear insights into sales, shipping, and profitability performance.
 <img width="1168" height="655" alt="image" src="https://github.com/user-attachments/assets/96304d1c-93b4-4eed-a39c-9c99b29ac6a6" />
 
 
 ### Problem Statement
 
-The management team at the Awesome Chocolate Factory needed a unified, interactive tool to track sales, shipping, and profitability KPIs. Without a centralized dashboard, it was difficult to analyze performance trends and make timely, data-driven decisions. This project solves that problem by creating a comprehensive Power BI report that provides clear, actionable insights.
+The management team at the Awesome Chocolate Factory required a centralized, interactive analytics solution to track sales, shipping, and profitability KPIs. Data was previously fragmented and difficult to analyze at scale. This project addresses the challenge by building a cloud-backed BI dashboard that enables timely, data-driven decision-making.
 
 ### Dataset
 
-The project utilizes three core data files from the Awesome Chocolate Factory: `Shipments.csv`, `Dimension Data.csv`, and `Calendar.csv`. These files are structured to build a Star Schema data model within Power BI and are included in the repository.
+The project uses three core datasets:
+Shipments (Fact table)
+Dimension Data (Product, Customer, Geography)
+Calendar (Date dimension)
+The data is stored in Azure SQL Database and modeled in Power BI using a Star Schema. Sample CSV files are included in the repository for reference and reproducibility.
 
 ### Tools and Technologies
 
-* **Power BI** (including **Power Query** and **DAX**)
-* **Excel** (Original Data Source)
+Azure SQL Database (Cloud data storage and querying)
+Power BI (Power Query, Data Modeling, DAX, Visualization)
+Excel (Original data source)
 
 ### Methods
 
-* **Data Cleaning and Transformation:** Utilized **Power Query** to clean raw data, handle missing values, and create additional columns to prepare the dataset for analysis.
-* **Data Modeling:** Designed and implemented a **Star Schema** data model, creating relationships between fact and dimension tables to ensure data integrity and optimize query performance.
-* **Advanced DAX Calculations:** Authored complex **DAX** (Data Analysis Expressions) measures from scratch to calculate key business metrics, including dynamic **Year-on-Year (YoY) profit growth**.
-* **Interactive Report Development:** Built a multi-page, interactive report featuring a range of visualizations (KPI cards, line charts, donut charts, treemaps) and user-centric features like **slicers, custom tooltips, and conditional formatting**.
-* **Testing and Validation:** Conducted thorough testing of the report's interactions, filters, and DAX calculations to ensure accuracy and a seamless user experience.
+Data Ingestion & Storage: Loaded structured sales data into Azure SQL Database to simulate a production-grade analytics backend.
+Data Cleaning & Transformation: Used Power Query to clean data, handle missing values, and create derived columns.
+Data Modeling: Designed and implemented a Star Schema, defining relationships between fact and dimension tables for performance and scalability.
+Advanced DAX Calculations: Authored optimized DAX measures, including YoY profit growth, margin analysis, and KPI metrics.
+Interactive Report Development: Built a multi-page Power BI dashboard using KPI cards, line charts, donut charts, treemaps, slicers, tooltips, and conditional formatting.
+Testing & Validation: Validated relationships, filters, and DAX logic to ensure accurate insights and smooth user interactions.
 
 ### Key Insights
 
-* A well-designed Star Schema is fundamental for performance and scalability in Power BI.
-* DAX enables complex business logic and time-intelligence calculations that go far beyond simple aggregations.
-* Effective report design combines powerful analytics with an intuitive user interface to drive adoption and business value.
+A Star Schema combined with Azure SQL significantly improves scalability and performance in BI solutions.
+DAX time-intelligence functions enable advanced business insights beyond basic aggregations.
+Well-designed dashboards balance analytical depth with intuitive UX to maximize business adoption.
 
 ### Dashboard/Model/Output
 
-* A complete Power BI file (`.pbix`) containing the full solution.
-* A dynamic Sales & Performance dashboard for the Awesome Chocolate Factory.
-* Visualizations showing profit by country, YoY growth trends, and product performance.
+A complete Power BI (.pbix) file containing the full solution.
+A dynamic Sales & Performance Dashboard backed by Azure SQL.
+Visual insights including profit by country, YoY growth trends, and product-level performance.
     
 
 ### How to Run This Project?
 
-To view and interact with the project, you will need Microsoft Power BI Desktop. The `.pbix` file can be downloaded from this repository and opened directly in the application.
+Install Microsoft Power BI Desktop.
+Download the .pbix file from this repository.
+(Optional) Restore or connect to the Azure SQL Database using the provided schema and credentials.
+Open the file in Power BI Desktop to explore the dashboard interactively.
 
 ### Results & Conclusion
-
-* The project delivered a comprehensive BI solution providing the Awesome Chocolate Factory with an interactive view of their sales performance.
-* The dashboard successfully visualizes key KPIs, enabling data-driven decision-making for management.
-* This project is a practical, end-to-end demonstration of building a professional-grade report in Power BI.
+This project delivers a cloud-backed, end-to-end BI solution for the Awesome Chocolate Factory. By integrating Azure SQL Database with Power BI, the dashboard provides a scalable, professional-grade analytics platform that enables management to monitor KPIs, identify trends, and make informed business decisions.
